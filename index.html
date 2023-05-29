@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,171 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Магазины</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Акции</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Доставка и оплата</a>
+              </li>
+            </ul>
+          </nav>
+
+          <a href="#" class="logo">
+            <img src="images/logo.svg" alt="logo" class="logo__img">
+          </a>
+
+          <div class="header__infobox">
+            <p class="header__address">
+              Москва,  ул. Науки  25
+            </p>
+
+            <ul class="user-list">
+              <li class="user-list__item">
+                <a href="#" class="user-list__link">
+                  <img src="images/heart.svg" alt="heart">
+                </a>
+              </li>
+              <li class="user-list__item">
+                <a href="#" class="user-list__link">
+                  <img src="images/profile.svg" alt="profile">
+                </a>
+              </li>
+              <li class="user-list__item">
+                <a href="#" class="user-list__link basket">
+                  <img src="images/basket.svg" alt="basket">
+                  <p class="backet__point">1</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <div class="container">
+        <ul class="menu-categories">
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">Квадроциклы</a>
+          </li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">Катера</a>
+          </li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">Гидроциклы</a>
+          </li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">Лодки</a>
+          </li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">Вездеходы</a>
+          </li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">Снегоходы</a>
+          </li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">Двигатели</a>
+          </li>
+          <li class="menu-categories__item">
+            <a href="#" class="menu-categories__link">Запчасти</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner-section page-section">
+    <div class="container">
+      <div class="banner-section__inner">
+        <div class="banner-section__slider">
+          <a class="banner-section__slider-item" href="#">
+            <img src="images/banner-slider.jpg" alt="1">
+          </a>
+          <a class="banner-section__slider-item" href="#">
+            <img src="images/banner-slider.jpg" alt="2">
+          </a>
+          <a class="banner-section__slider-item" href="#">
+            <img src="images/banner-slider.jpg" alt="3">
+          </a>
+          <a class="banner-section__slider-item" href="#">
+            <img src="images/banner-slider.jpg" alt="4">
+          </a>
+          <a class="banner-section__slider-item" href="#">
+            <img src="images/banner-slider.jpg" alt="5">
+          </a>
+          <a class="banner-section__slider-item" href="#">
+            <img src="images/banner-slider.jpg" alt="6">
+          </a>
+        </div>
+        <a class="banner-section__item sale-item" href="#">
+          <div class="sale-item__top">
+            <p class="sale-item__mark">акция</p>
+            <div class="sale-item__price">
+              <div class="price sale-item__price-new">190 000</div>
+              <div class="price sale-item__price-old">225 000</div>
+            </div>
+          </div>
+          <img src="images/content/sale-1.png" alt="" class="sale-item__img">
+          <h5 class="sale-item__title">
+            Лодочный мотор Suzuki DF9.9BRS
+          </h5>
+          <p class="sale-item__footer">
+            Акция действует до
+            <span>31.08.2020</span>
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="search page-section">
+    <div class="container">
+      <div class="search__inner">
+        <div class="search__tabs">
+          <a href="#tab-1" class="search__tabs-item search__tab-active">Поиск по номеру</a>
+          <a href="#tab-2" class="search__tabs-item">Поиск по марке</a>
+          <a href="#tab-3" class="search__tabs-item">Поиск по названию товара</a>
+        </div>
+
+        <div class="search__content">
+          <div id="tab-1" class="search__content-item search__content-active">
+            <form class="search__content-form">
+              <input class="search__content-input" type="text" placeholder="Введите номер">
+              <button class="search__content-btn" type="submit">искать</button>
+            </form>
+          </div>
+          <div id="tab-2" class="search__content-item">
+            <form class="search__content-form">
+              <input class="search__content-input" type="text" placeholder="Введите марку">
+              <button class="search__content-btn" type="submit">искать</button>
+            </form>
+          </div>
+          <div id="tab-3" class="search__content-item">
+            <form class="search__content-form">
+              <input class="search__content-input" type="text" placeholder="Введите названиe товара">
+              <button class="search__content-btn" type="submit">искать</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
